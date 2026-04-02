@@ -11,7 +11,7 @@
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=460696430970324&ev=PageView&noscript=1"/></noscript>
 <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/02414940-c939-4c7b-8397-f531c8640a72-loader.js"></script>
 <style>
-:root{--bg:#0c0814;--surface:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.06);--purple:#6f4d89;--purple-l:#9b7bb8;--blue:#80c0ff;--nude:#d4b8a6;--t1:rgba(255,255,255,0.92);--t2:rgba(255,255,255,0.55);--t3:rgba(255,255,255,0.3);--t4:rgba(255,255,255,0.12);--green:#2ECC71;--gold:#D4A843;--r:12px;--r2:20px;--r3:28px}
+:root{--bg:#0c0814;--surface:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.06);--purple:#6f4d89;--purple-l:#9b7bb8;--blue:#80c0ff;--nude:#d4b8a6;--t1:rgba(255,255,255,0.92);--t2:rgba(255,255,255,0.55);--t3:rgba(255,255,255,0.55);--t4:rgba(255,255,255,0.45);--green:#2ECC71;--gold:#D4A843;--r:12px;--r2:20px;--r3:28px}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--t2);overflow-x:hidden;-webkit-font-smoothing:antialiased}
@@ -88,8 +88,15 @@ section{padding:80px 0}
 
 .gate-section{padding:80px 0;text-align:center}
 
-/* RD Station form — zero overrides, transparent container */
+/* RD Station form — transparent bg, white text only */
 #rdFormContainer{background:transparent}
+#rdFormContainer label,
+#rdFormContainer p,
+#rdFormContainer span,
+#rdFormContainer a,
+#rdFormContainer .bricks-form__label,
+#rdFormContainer [class*="label"]{color:#ffffff!important}
+#rdFormContainer .bricks-form__field .bricks-form__static{color:rgba(255,255,255,0.6)!important}
 
 /* Locked preview */
 .locked-preview{margin-top:60px;padding:40px 24px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r2);text-align:center;position:relative;overflow:hidden}
@@ -188,7 +195,7 @@ section{padding:80px 0}
       <div class="ac"><div class="ab">57%</div><div class="am">Esportiva</div><div class="as">Nutrição esportiva</div></div>
       <div class="ac"><div class="ab">43%</div><div class="am">Multidisciplinar</div><div class="as">Atendem com médico</div></div>
     </div>
-    <div style="margin-top:20px;padding:16px 20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);font-size:13px;color:var(--t3);text-align:center" class="rv">69,5% nutricionistas · 7% médicos · 3% ed. física · 18% estudantes · 51% especialistas</div>
+    <div style="margin-top:20px;padding:16px 20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);font-size:13px;color:rgba(255,255,255,0.9);text-align:center" class="rv">69,5% nutricionistas · 7% médicos · 3% ed. física · 18% estudantes · 51% especialistas</div>
   </div>
 </section>
 
